@@ -1,5 +1,5 @@
 
-# Project Title
+# Mini-Projects
 
 Collection of projects get done over the years of graduation .
  
