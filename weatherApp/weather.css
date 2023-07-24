@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6152a6;
+}
+.wrapper {
+  width: 400px;
+  border-radius: 7px;
+  background: #fff;
+}
+.wrapper header {
+  color: #6152a6;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 16px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+header i {
+  cursor: pointer;
+  font-size: 0px;
+  margin-right: 6px;
+}
+
+.wrapper.active header i{
+    font-size: 27px;
+    margin-left: 3px;
+}
+
+.wrapper .input-part {
+  margin: 20px 25px 30px;
+}
+.wrapper.active .input-part{
+    display: none;
+}
+.input-part .info-txt{
+    display: none;
+ font-size: 14px;
+ text-align: center;
+ padding: 12px 10px;
+ border-radius: 5px;
+ margin-bottom: 14px;
+}
+.info-txt.error{
+    display: block;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+} 
+.info-txt.pending{
+    display: block;
+    color: #625ea9;
+    background: #b3aee8;
+    border: 1px solid #bee5eb;
+} 
+.input-part :where(input, button) {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.input-part input {
+  text-align: center;
+  border: 1px solid #bfbfbf;
+}
+.input-part input:is(:focus,:valid){
+    border: 2px solid #6152a6;
+}
+.input-part .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.separator::before{
+content: "or";
+font-size: 16px;
+color: #ccc;
+padding: 0 15px;
+background: #fff;
+}
+.input-part button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #6152a6;
+}
+
+
+
+
+
+/* ! css for weather part >> the phase 2 css  */
+
+
+.wrapper .weather-part{
+    margin: 28px 0 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+}
+.wrapper.active .weather-part{
+    display: flex;
+}
+.weather-part img{
+ max-width: 115px;
+}
+.weather-part .temp{
+    display: flex;
+    font-size: 69px;
+    font-weight: 500;
+}
+.weather-part .temp .numb{
+    font-weight: 500;
+}
+.weather-part .temp .deg{
+    font-size: 37px;
+    margin: 10px 5px 0 0;
+    display: block;
+
+}
+.weather-part .location{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+.location i{
+    font-size: 19px ;
+    margin-right:  5px;
+}
+.weather-part .bottom-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #bfbfbf;
+    justify-content: space-between;
+}
+.bottom-details .column{
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+.column i{
+    color: #6152a6;
+
+}
+.column.humidity{
+    border-left: 1px solid #bfbfbf;
+}
+.details .temp, .humidity span{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -2px;
+}
+.details .temp .deg{
+    margin: 0;
+    font-size: 15px;
+    pad: 0 2px 0 1px;
+}
+.details p{
+    font-size: 14px;
+    margin-top:-3px ;
+}
