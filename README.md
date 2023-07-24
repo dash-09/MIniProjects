@@ -1,5 +1,19 @@
-# MiniProjects
 
-Collection of cool and fun projects for kids if you want to annoy them more projects are on the way . 
-Thanks for visiting this .
-Have a good day .
+# Project Title
+
+Collection of projects get done over the years of graduation .
+ 
+
+
+## Author
+
+- [@dash-09](https://www.github.com/dash-09)
+
+
+## About
+
+- Collection of mini project 
+- HTML,CSS, JS are used .
+- Fun and Annoying for kids
+- More project are coming.
+
