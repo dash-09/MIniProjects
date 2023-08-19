@@ -9,8 +9,6 @@ let secs = document.querySelector(".sec");
 let hour = 0;
 let min = 0; let sec = 0;
 let interval;
-
-
 start.addEventListener("click", function () {
     interval = setInterval(function () {
         if (sec < 59) {
